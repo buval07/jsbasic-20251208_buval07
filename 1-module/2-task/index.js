@@ -11,6 +11,19 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  if (name === null) { //возвращем сразу false если пусто
+    return false;
+  }
+
+  name = name.trim(); //убирает пробелы в начале и в конце строки, но не трогает пробелы внутри
+
+  if (name.includes(' ') || name.length < 4) { //Проверяем содержит ли пробелы и длину не меньше 4
+    return false;
+  }
+
+  return true;
+
+
 }
 
 function sayHello() {
@@ -22,3 +35,5 @@ function sayHello() {
     print('Некорректное имя');
   }
 }
+
+
