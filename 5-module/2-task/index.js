@@ -10,6 +10,5 @@ function toggleText() {
       text.hidden = true;
     }
   }
-
   button.addEventListener("click", textHidden);
 }
